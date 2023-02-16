@@ -16,7 +16,7 @@ fi
 
 cp TestListExamples.java student-submission
 
-javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar TestListExamples.java ListExamples.java
+javac -cp $CPATH TestListExamples.java ListExamples.java
 if [[ $? -eq 0 ]];
 then 
     echo "ListExamples.java successfully compiled"
@@ -25,4 +25,4 @@ else
     exit 1
 fi
 
-java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore TestListExamples
+java -cp $CPATH org.junit.runner.JUnitCore TestListExamples
