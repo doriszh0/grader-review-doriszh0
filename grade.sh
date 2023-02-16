@@ -6,7 +6,6 @@ git clone $1 student-submission
 echo 'Finished cloning'
 
 cd student-submission
-cd lab3
 if [[ -f ListExamples.java ]]
 then 
     echo "ListExamples.java found"
