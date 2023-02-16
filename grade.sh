@@ -17,7 +17,7 @@ fi
 cp TestListExamples.java student-submission
 
 javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar TestListExamples.java ListExamples.java
-if [[ $? -eq 0 ]]
+if [[ $? -eq 0 ]];
 then 
     echo "ListExamples.java successfully compiled"
 else 
